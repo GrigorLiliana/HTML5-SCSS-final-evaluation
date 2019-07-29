@@ -1,0 +1,155 @@
+/*variables*/
+$main_color: #1e3799;
+$secondary_color: #6a89cc;
+$font_titles: "Coiny";
+/*My reset default values*/
+* {
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+}
+*:not(input) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/******header******/
+header {
+  padding: 1rem;
+  background-color: $secondary_color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-family: $font_titles;
+    color: white;
+    font-size: 18px;
+    margin-left: 2rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    list-style: none;
+    a {
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      &:hover {
+        color: $main_color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+/******* Main **********/
+main {
+  background-image: url(Eval_Docs/images/houndstooth-pattern.png);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  h2 {
+    text-align: center;
+    color: $main_color;
+    font-family: $font_titles;
+  }
+}
+/****** 1st section ***********/
+#mycontent {
+  background-color: white;
+  width: 60%;
+  margin: 3rem auto 1rem auto;
+  padding: 3rem 2rem 2rem 2rem;
+  /* shadow generate at https://www.cssmatic.com/box-shadow */
+  -webkit-box-shadow: 2px 3px 18px 0px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 2px 3px 18px 0px rgba(51, 51, 51, 1);
+  box-shadow: 2px 3px 18px 0px rgba(51, 51, 51, 1);
+}
+h3 {
+  margin-top: 2rem;
+  color: $main_color;
+  font-family: $font_titles;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+/*********** 2nd section ***************/
+#species ul {
+  list-style: none;
+  display: flex;
+  figure {
+    text-align: center;
+    margin: 2rem;
+    img {
+      border: 4px solid $main_color;
+      border-radius: 50%;
+      width: 100%;
+      &:hover {
+        transform: scale(1.5) rotate(360deg);
+      }
+    }
+    figcaption {
+      font-family: Arial, Helvetica, sans-serif;
+      color: $main_color;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+}
+
+// contact section
+#flex_contact {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+
+  h4 {
+    margin-top: 0.5rem;
+    color: $main_color;
+    font-family: $font_titles;
+  }
+  address {
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    font-style: initial; //italic by defaut
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+  }
+  form {
+    display: flex;
+    margin-top: 1rem;
+    width: 40%;
+    input {
+      border-radius: 5px;
+      margin-left: 0.5rem;
+    }
+    [type="email"] {
+      padding: 0.2rem;
+    }
+    [type="submit"] {
+      color: white;
+      background-color: $main_color;
+      border-color: $main_color;
+    }
+  }
+}
+#maps {
+  margin-left: 7rem;
+  border: 4px solid $main_color;
+  width: 50%;
+  height: 400px;
+}
+
+/************ footer ***********/
+footer {
+  background-color: $secondary_color;
+  padding: 1rem;
+  p {
+    margin: 0;
+    color: white;
+    text-align: right;
+  }
+}

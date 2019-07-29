@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--html 5-->
+<html lang="en">
+  <head>
+    <!-- meta for my caracteres-->
+    <meta charset="UTF-8" />
+    <!-- meta for responsibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- compatibility for "not good's" browsers -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- link for my paw icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <!-- link for coiny font provided by google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny"
+      rel="stylesheet"
+    />
+    <!-- link for my style file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- the title of the web document-->
+    <title>Pet4U</title>
+  </head>
+  <body>
+    <!-- the header of the page -->
+    <header>
+      <h1>Pet4U</h1>
+      <nav>
+        <ul>
+          <!-- list of links -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#species">Species</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- the main content of the page-->
+    <main>
+      <h2>Get a pet for your life</h2>
+      <div id="mycontent">
+        <!--First I have nomed an artcicle for my div content but that give me an error when I validat my code because I don't have any h1 to h6 directy to my article so I changed this to one div-->
+        <section id="home">
+          <h3><i class="fas fa-paw"></i> Rehome a pet</h3>
+          <p>
+            We find homes for unwanted cats, dogs, small pets and horses across
+            the UK and our tailor-made service means we help each pet find the
+            right person for them.
+          </p>
+        </section>
+        <section id="species">
+          <h3><i class="fas fa-paw"></i> Species</h3>
+          <ul>
+            <li>
+              <!-- Some knowledge by openclassroms: https://openclassrooms.com/en/courses/5265446-build-your-first-web-pages-with-html-and-css-->
+              <!-- a figure is a meaningful element, it encompasses an image and an explanatory caption relative to the image (transleted by google rssss) -->
+              <figure>
+                <img src="Eval_Docs/images/species-dog.jpg" alt="Dog" />
+                <figcaption>Dog</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="Eval_Docs/images/species-cat.jpg" alt="Cat" />
+                <figcaption>Cat</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="Eval_Docs/images/species-horse.jpg" alt="" />
+                <figcaption>Horse</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="Eval_Docs/images/species-rabbit.jpg" alt="rabbit" />
+                <figcaption>Rabbit</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section id="contact">
+          <h3><i class="fas fa-paw"></i> Contact</h3>
+          <!--div created to put the contacts and the map side by side-->
+          <div id="flex_contact">
+            <!-- div created to agroup the all elements inside the contact-->
+            <div id="contact_date">
+              <h4>Address</h4>
+              <address>
+                <!-- by W3C: to the brower reconize that this is an adress -->
+                101 Chemin des Mineurs Oeutranges<br />
+                57100 Thionville<br />
+                03 82 50 31 45
+              </address>
+              <h4>Get contacted</h4>
+              <form action="get-contacted.php">
+                <input type="email" required placeholder="e-mail" />
+                <input type="submit" name="Send" value="Send" id="submit" />
+              </form>
+            </div>
+            <iframe
+              id="maps"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10384.504180279802!2d6.116664!3d49.40652200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76a85282d65a07f5!2sSPA+-+La+Soci%C3%A9t%C3%A9+Protectrice+des+Animaux+-+refuge+de+Thionville!5e0!3m2!1sen!2slu!4v1558012353112!5m2!1sen!2slu"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--footer of the page-->
+    <footer>
+      <p>Copyright left for Ward.</p>
+    </footer>
+    <!--the end of the containt of the page-->
+  </body>
+  <!-- the end of the document html-->
+</html>
